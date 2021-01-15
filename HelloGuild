@@ -1,0 +1,52 @@
+//this program outputs OPEN MINDS GUILD! hello, world using brainfuck language
+
+/*> : increment the pointer (+1),
+
+< : decrement the pointer (-1),
+
++ : increment the byte in the memory cell where the pointer is located,
+
+- : decrement the byte in the memory cell where the pointer is located,
+
+. : send the value of the pointed byte as output (treated as an ASCII value),
+
+, : insert an input byte (user input) in the memory cell where the pointer */
+
+
+// this operation puts O in ASCII in the first memory case, we use > to move to the second one first then decrement it to create a loop
+//this could also be done with only +++ signs instead
+//the code: 
+
+>++++++++++[<+++++++>-]<+++++++++.
++.
+>+++++[<-->-]<-.
+>+++[<+++>-]<.
+++++++++++[<++>-]<+++++++.
+>>+++++++[<+++++++++++>-]<.
+----.
++++++.
+>+++++[<-->-]<.
+>++++[<++++>-]<-.
+---------------------------------------------------.
+>+++++++++++++[<+++>-]<.
+>+++++[<++>-]<++++.
+>++[<------>-]<.
++++.
+>++[<---->-]<.
+>+++++[<------->-]<.
+[-]
+//this loop empties the memory case of the current pointer and restarts the count
+>++++++++++[<+++>-]<++.
+[-]
+>++++++++[<+++++++++>-]<.
+>++++[<+++++++>-]<+.
++++++++..
++++.
+>>++++++[<+++++++>-]<++.
+------------.
+>++++++[<+++++++++>-]<+.
+<.
++++.
+------.
+--------.
+>>>++++[<++++++++>-]<
